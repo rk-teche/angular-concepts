@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    counter-reset: heading;
+  }
+  
+  h4{
+    &:before{
+      content: "Heading " counter(heading, upper-roman) ": ";
+      counter-increment: heading;
+    }
+  }
