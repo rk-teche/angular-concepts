@@ -1,8 +1,34 @@
-<li><a routerLink="/rxjs">RxJS</a></li>
+<li><a class="routerlink" routerLink="/forms">forms</a></li>
+<li><a class="routerlink" routerLink="/rxjs">RxJS</a></li>
   <li><a routerLink="/angular-material">Angular Material</a></li>
   <li><a routerLink="/ngrx">NgRx</a></li>
+  <li><a routerLink="/karma">KarmaJS is awesome</a></li>
 
   <!-- Angular -
 -- template complier
 -- View Engine
 -- Ivy Rendering -->
+<ng-container>hello</ng-container>
+
+<h2>Ivy Rendering</h2>
+<ul>
+  <li>Easier to Debug</li>
+  <li>Faster Compilation
+    <ol>
+      <li>Locality Principle: If component changes, it's dependencies doesn't have to recomplie</li>
+      <li>Ivy provides "stable" API to ship compiled code through NPM
+        -- No global compilation needed anymore
+        -- Module are already AOT
+      </li>
+    </ol>
+  </li>
+  <li>Easier to Ship Libraries</li>
+  <li>Easier test execution</li>
+  <li>Easier Dynamic Component Loading</li>
+</ul>
+
+<h3>Problem with view Engine</h3>
+<ul>
+  <li>View Engine is not tree shakable</li>
+  <li></li>
+</ul>
