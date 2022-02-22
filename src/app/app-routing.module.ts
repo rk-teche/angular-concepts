@@ -8,7 +8,8 @@ const routes: Routes = [
     component: AppComponent
   },
   { path: 'html', loadChildren: () => import('./html/html.module').then(m => m.HtmlModule) },
-  { path: 'javascript', loadChildren: () => import('./javascript/javascript.module').then(m => m.JavascriptModule)  }
+  { path: 'css', loadChildren: () => import('./css/css.module').then(m => m.CssModule) },
+  { path: 'javascript', loadChildren: () => import('./javascript/javascript.module').then(m => m.JavascriptModule)  },
 ];
 
 @NgModule({
