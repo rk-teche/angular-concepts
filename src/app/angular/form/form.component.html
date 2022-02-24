@@ -1,1 +1,28 @@
-<p>form works!</p>
+<!-- 
+    Abstract controls -> Custom validation
+    Form Control
+    Form Group
+    Form Array
+    Form Builder
+ -->
+
+<input type="text" [formControl]="aloneControl" />
+{{aloneControl?.value}}
+
+<form [formGroup]="userForm" (ngSubmit)="submitUserForm()">
+    <input type="text" placeholder="First Name" formControlName="firstName" />
+    <input type="text" placeholder="Last Name" formControlName="LastName" />
+    <input type="email" placeholder="email" formControlName="email" />
+    <button [disabled]="userForm?.invalid" type="submit">submit</button>
+</form>
+
+<!-- <form [formArray]="bigUserForm" (ngSubmit)="submitUserFormMulti()">
+    <ng-container *ngFor="let userF of bigUserForm.controls; let i = index;">
+        <div [formGroup]="userF">
+            <input type="text" placeholder="First Name" formControlName="firstName" />
+            <input type="text" placeholder="Last Name" formControlName="LastName" />
+            <input type="email" placeholder="email" formControlName="email" />
+        </div>
+        <button [disabled]="userForm?.invalid" type="submit">submit</button>
+    </ng-container>
+</form> -->

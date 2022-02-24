@@ -1,5 +1,5 @@
-<li><a class="routerlink" routerLink="/forms">forms</a></li>
-<li><a class="routerlink" routerLink="/rxjs">RxJS</a></li>
+<li><a class="routerlink" routerLink="forms">forms</a></li>
+<li><a class="routerlink" routerLink="rxjs">RxJS</a></li>
   <li><a routerLink="/angular-material">Angular Material</a></li>
   <li><a routerLink="/ngrx">NgRx</a></li>
   <li><a routerLink="/karma">KarmaJS is awesome</a></li>
@@ -32,3 +32,45 @@
   <li>View Engine is not tree shakable</li>
   <li></li>
 </ul>
+
+<!-- Angular State management library: ngRX,
+Subject/BehaviourSubject -> RxJS's Scan operator with pipe, RxJS's Tap operator
+ref: 
+1. https://rxjs.dev/api/operators/scan
+2. https://www.youtube.com/watch?v=CyAezvRYwvA&t=218s
+-->
+
+<!-- Angular Mobile device integration:
+ionic, nativescript
+ref: 
+1. https://ionicframework.com/docs/
+2. https://nativescript.org/
+3. https://www.youtube.com/watch?v=uuQxPzba4J8&t=11s
+4. https://play.nativescript.org/
+-->
+
+<!-- Angular Zone: a meta monkey patch
+  ngZone - 
+  1. It cates asynchronous operations from the Angular app i.e 
+   -- setTimeout(),
+   -- setInterval(),
+   -- click, focus, mousemove, addEventListener,
+   -- geolocation.getCurrentPosition, XMLHttpRequest, PromiseRejectionEvent, requestAnimationFrame.
+
+  2. when no task are remaining for the current VM turn (Above Event), the NgZone will trigger a change detection cycle (tick).
+  3. when `NgZone.onMicrotaskEmpty` then it will trigger `ApplicationRef.tick()`
+  4. Long CD cycles in combination with high-frequency events -
+      -- mousemove
+      -- scroll
+      -- requestAnimationFrame
+      -- setInterval with short intervals (clocks!)
+
+  
+ref: 
+1. https://ionicframework.com/docs/
+2. https://nativescript.org/
+3. https://www.youtube.com/watch?v=uuQxPzba4J8&t=11s
+4. https://play.nativescript.org/
+-->
+<!-- {{count}}
+<button (click)="increaseCounter()">counter</button> -->
