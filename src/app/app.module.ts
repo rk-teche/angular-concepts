@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { counterReducer } from './angular/state-management/counter-reducer'
 import { postReducer } from './angular/state-management/post-reducer'
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
