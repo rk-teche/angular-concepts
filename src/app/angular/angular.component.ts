@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { increment, decrement, reset } from "./counter-reducer";
+
+import { Store } from '@ngrx/store';
+import { decrement, increment, reset } from './state-management/counter/counter-actions';
 
 @Component({
   selector: 'app-angular',
