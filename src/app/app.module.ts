@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { counterReducer } from './angular/state-management/counter-reducer'
-import { postReducer } from './angular/state-management/post-reducer'
+import { counterReducer } from './angular/state-management/counter/counter-reducer'
+import { postReducer } from './angular/state-management/post/post-reducer'
 import { StoreModule } from '@ngrx/store';
 
 @NgModule({
